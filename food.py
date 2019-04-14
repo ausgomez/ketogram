@@ -15,7 +15,7 @@ def display_carbs(query):
     url = "https://api.nal.usda.gov/ndb/V2/reports?format=json&api_key=" + api_key + "&ndbno=" + query
     response = urllib.urlopen(url)
     data = json.loads(response.read())
-    return (data["foods"][0]['food'][1])
+    return (data["foods"][0]['food']['nutrients'][4]['vslue'])
 
 test = search_food("beer, coke, soda")
 print display_carbs(test)
