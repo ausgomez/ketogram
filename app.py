@@ -34,9 +34,9 @@ def sms_reply():
         #resp.message ('Fruit: '+ tags[0] + ', ' + carbs + ' g carb(s)')
 
         if carbs < 15:
-            resp.message ('Fruit: '+ tags[0] + ', ' + str(carbs) + ' g carb(s) '+ ' Keto Friendly, you are good to go!')
+            resp.message ('Ketogram says: \n' + tags[0] + '! ' + str(carbs) + ' g carb(s) '+ '\nKeto Friendly, you are good to go! ')
         else :
-            resp.message ('Fruit: '+ tags[0] + ', ' + str(carbs) + ' g carb(s)' + ' Not Keto Friendly!') 
+            resp.message ('Ketogram says: \n' + tags[0] + '! ' + str(carbs) + ' g carb(s)' + '\nNot Keto Friendly!') 
 
     else:
         resp.message('Please send an image.')
