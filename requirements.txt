@@ -5,7 +5,7 @@ chardet==3.0.4
 clarifai==2.6.1
 Click==7.0
 configparser==3.7.4
-cryptography==2.6.1
+cryptography==3.2
 enum34==1.1.6
 Flask==1.0.2
 functools32==3.2.3.post2
